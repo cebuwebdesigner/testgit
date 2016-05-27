@@ -1,0 +1,441 @@
+<body>
+
+<div style="padding:0px; margin:30px">&nbsp;</div><script>  
+var AAA = localStorage['settings'].split(',');
+document.write('<link rel="stylesheet" href="themes/'+AAA[8]+'/jquery.mobile-1.3.1.css" />');
+</script>
+
+
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="jquery.mobile-1.3.1.min.js"></script>
+
+
+  
+    
+
+<style type="text/css">
+    .bs-margin{
+    	margin: 20px;
+    }
+	
+</style>
+
+
+<script>
+
+var des1='970-200-784.90-734-858.95-1,095-200-878.65-823-965.20-1,395<br />per pax-200<br />per pax-1,103.65<br />per pax-1037<br />per pax-N.A.-3,550<br />per room-200<br />per pax -N.A.-2,618<br />per room-N.A.';
+var des2='970-200-784.90-734-858.95-1,095-200-878.65-823-965.20-1395<br />per pax-200<br />per pax-1,103.65<br />per pax-1037<br />per pax-N.A.-3,550<br />per room -200<br />per pax -N.A.-2,618<br />per room-N.A.';
+var des3='800-168-540.30-648-800-885-168-695.30-728-885-1015<br />per person-168<br />per pax-855.30-823<br />per person-N.A.-2,420<br />per room-168<br />per pax-N.A.-1,966<br />per room-N.A.';
+var des4='800-168-540.30-648-800-885-168-695.30-728-885-1015<br />per person-168<br />per pax-855.30-823<br />per person-N.A.-2,420<br />per room-168<br />per pax-N.A.-1,966<br />per room-N.A.';
+var des5='910-168-572-687-815.60-1085-168-654.50-815-955.85-1,390<br />per pax-168<br />per person-807<br />per pax-1033<br />per pax-N.A.-3,180<br />per room-168<br />per pax-N.A.-2,351<br />per room-N.A.';
+var des6='910-168-572-687-815.60-1085-168-654.50-815-955.85-1,390<br />per pax-168<br />per person-807<br />per pax-1033<br />per pax-N.A.-3,180<br />per room-168<br />per pax-N.A.-2,351<br />per room-N.A.';
+var des7='750-168-395.60-580-566.70-875-168-513.10-687-766.45-1,505<br />per person-168<br />per person-828.10<br />per person-1,106<br />per person -N.A.-1,830<br />per pax-168<br />per pax-990.55<br />per person-1,339<br />per pax-N.A.';
+var des8='750-168-395.60-580-566.70-875-168-513.10-687-766.45-1,505<br />per person -168<br />per person-828.10per person-1,106<br />per person -N.A.-1,830<br />per pax-168<br />per pax-990.55<br />per person-1,339<br />per pax-N.A.';
+var des9='660-200-526.80-500-580.10-775-200-612.30-580-677.40-965<br />per person-200<br />per person-754.80<br />per person-716<br />per person-N.A.-1,090<br />per pax-200<br />per pax-847.60<br />per pax-808<br />per pax-N.A.';
+var des10='660-200-526.80-500-580.10-775-200-612.30-580-677.40-965<br />per person-200<br />per person-754.80<br />per person-716<br />per person-N.A.-1,080<br />per pax -200<br />per pax-847.60<br />per pax -808<br />per pax-N.A.';
+var des11='195-135-165-195-195-265-185-220-265-255-375<br />per person-255<br />per person-300<br />per person-351<br />per person-N.A.-475<br />per pax-260<br />per pax-370<br />per pax-405<br />per pax-N.A.';
+var des12='305-135-165-195-195-265-185-220-265-255-375<br />per person-255<br />per person-300<br />per person-351<br />per person-N.A.-475<br />per pax-260<br />per pax-370<br />per pax-405<br />per pax-N.A.';
+
+
+var na12 = '-----';
+
+
+var ades1 = des1.split("-");
+/*var a0des1 = ades1[0].split("-");
+var a1des1 = ades1[1].split("-");
+var a2des1 = ades1[2].split("-");
+var a3des1 = ades1[3].split("-");
+*/
+
+var ades2 = des2.split("-");
+/*var a0des2 = ades2[0].split("-");
+var a1des2 = ades2[1].split("-");
+var a2des2 = ades2[2].split("-");
+var a3des2 = ades2[3].split("-");*/
+
+
+var ades3 = des3.split("-");
+/*var a0des3 = ades3[0].split("-");
+var a1des3 = ades3[1].split("-");
+var a2des3 = ades3[2].split("-");
+var a3des3 = na12.split("-");*/
+
+
+var ades4 = des4.split("-");
+/*var a0des4 = ades4[0].split("-");
+var a1des4 = ades4[1].split("-");
+var a2des4 = ades4[2].split("-");
+var a3des4 = na12.split("-");*/
+
+
+var ades5 = des5.split("-");
+/*var a0des5 = ades5[0].split("-");
+var a1des5 = ades5[1].split("-");
+var a2des5 = ades5[2].split("-");
+var a3des5 = na12.split("-");*/
+
+
+var ades6 = des6.split("-");
+/*var a0des6 = ades6[0].split("-");
+var a1des6 = ades6[1].split("-");
+var a2des6 = ades6[2].split("-");
+var a3des6 = na12.split("-");*/
+
+
+var ades7 = des7.split("-");
+/*var a0des7 = ades7[0].split("-");
+var a1des7 = ades7[1].split("-");
+var a2des7 = ades7[2].split("-");
+var a3des7 = ades7[3].split("-");*/
+
+
+var ades8 = des8.split("-");
+/*var a0des8 = ades8[0].split("-");
+var a1des8 = ades8[1].split("-");
+var a2des8 = ades8[2].split("-");
+var a3des8 = ades8[3].split("-");*/
+
+
+var ades9 = des9.split("-");
+/*var a0des9 = ades9[0].split("-");
+var a1des9 = ades9[1].split("-");
+var a2des9 = na12.split("-");
+var a3des9 = na12.split("-");*/
+
+
+
+var ades10 = des10.split("-");
+/*var a0des10 = ades10[0].split("-");
+var a1des10 = ades10[1].split("-");
+var a2des10 = na12.split("-");
+var a3des10 = na12.split("-");*/
+
+
+var stateObject = {
+    "Cebu to Cagayan": {
+     "2nd Class": ["Adult: Php "+ades1[0], "0 to 2 yrs old: Php "+ades1[1],"3 to 11 yrs old: Php "+ades1[2],"60 yrs & up: Php "+ades1[3],"Student: Php "+ades1[4]],
+        "Tourist": ["Adult: Php "+ades1[5], "0 to 2 yrs old: Php "+ades1[6],"3 to 11 yrs old: Php "+ades1[7],"60 yrs & up: Php "+ades1[8],"Student: Php "+ades1[9]],
+		"Cabin": ["Adult: Php "+ades1[10], "0 to 2 yrs old: Php "+ades1[11],"3 to 11 yrs old: Php "+ades1[12],"60 yrs & up: Php "+ades1[13],"Student: Php "+ades1[14]],
+		"Presidential Suite": ["Adult: Php "+ades1[15], "0 to 2 yrs old: Php "+ades1[16],"3 to 11 yrs old: Php "+ades1[17],"60 yrs & up: Php "+ades1[18],"Student: Php "+ades1[19]]
+    },
+	
+	
+	
+	"Cagayan to Cebu":{ "2nd Class": ["Adult: Php "+ades2[0], "0 to 2 yrs old: Php "+ades2[1],"3 to 11 yrs old: Php "+ades2[2],"60 yrs & up: Php "+ades2[3],"Student: Php "+ades2[4]],
+        "Tourist": ["Adult: Php "+ades2[5], "0 to 2 yrs old: Php "+ades2[6],"3 to 11 yrs old: Php "+ades2[7],"60 yrs & up: Php "+ades2[8],"Student: Php "+ades2[9]],
+		"Cabin": ["Adult: Php "+ades2[10], "0 to 2 yrs old: Php "+ades2[11],"3 to 11 yrs old: Php "+ades2[12],"60 yrs & up: Php "+ades2[13],"Student: Php "+ades2[14]],
+		"Presidential Suite": ["Adult: Php "+ades2[15], "0 to 2 yrs old: Php "+ades2[16],"3 to 11 yrs old: Php "+ades2[17],"60 yrs & up: Php "+ades2[18],"Student: Php "+ades2[19]]},
+	
+	
+	
+	"Cebu to Iloilo":{ "2nd Class": ["Adult: Php "+ades3[0], "0 to 2 yrs old: Php "+ades3[1],"3 to 11 yrs old: Php "+ades3[2],"60 yrs & up: Php "+ades3[3],"Student: Php "+ades3[4]],
+        "Tourist": ["Adult: Php "+ades3[5], "0 to 2 yrs old: Php "+ades3[6],"3 to 11 yrs old: Php "+ades3[7],"60 yrs & up: Php "+ades3[8],"Student: Php "+ades3[9]],
+		"Cabin": ["Adult: Php "+ades3[10], "0 to 2 yrs old: Php "+ades3[11],"3 to 11 yrs old: Php "+ades3[12],"60 yrs & up: Php "+ades3[13],"Student: Php "+ades3[14]],
+		"Presidential Suite": ["Adult: Php "+ades3[15], "0 to 2 yrs old: Php "+ades3[16],"3 to 11 yrs old: Php "+ades3[17],"60 yrs & up: Php "+ades3[18],"Student: Php "+ades3[19]]},
+	
+	
+	
+	"Iloilo to Cebu":{ "2nd Class": ["Adult: Php "+ades4[0], "0 to 2 yrs old: Php "+ades4[1],"3 to 11 yrs old: Php "+ades4[2],"60 yrs & up: Php "+ades4[3],"Student: Php "+ades4[4]],
+        "Tourist": ["Adult: Php "+ades4[5], "0 to 2 yrs old: Php "+ades4[6],"3 to 11 yrs old: Php "+ades4[7],"60 yrs & up: Php "+ades4[8],"Student: Php "+ades4[9]],
+		"Cabin": ["Adult: Php "+ades4[10], "0 to 2 yrs old: Php "+ades4[11],"3 to 11 yrs old: Php "+ades4[12],"60 yrs & up: Php "+ades4[13],"Student: Php "+ades4[14]],
+		"Presidential Suite": ["Adult: Php "+ades4[15], "0 to 2 yrs old: Php "+ades4[16],"3 to 11 yrs old: Php "+ades4[17],"60 yrs & up: Php "+ades4[18],"Student: Php "+ades4[19]]},
+	
+	
+	
+	"Cebu to Ozamiz":{ "2nd Class": ["Adult: Php "+ades5[0], "0 to 2 yrs old: Php "+ades5[1],"3 to 11 yrs old: Php "+ades5[2],"60 yrs & up: Php "+ades5[3],"Student: Php "+ades5[4]],
+        "Tourist": ["Adult: Php "+ades5[5], "0 to 2 yrs old: Php "+ades5[6],"3 to 11 yrs old: Php "+ades5[7],"60 yrs & up: Php "+ades5[8],"Student: Php "+ades5[9]],
+		"Cabin": ["Adult: Php "+ades5[10], "0 to 2 yrs old: Php "+ades5[11],"3 to 11 yrs old: Php "+ades5[12],"60 yrs & up: Php "+ades5[13],"Student: Php "+ades5[14]],
+		"Presidential Suite": ["Adult: Php "+ades5[15], "0 to 2 yrs old: Php "+ades5[16],"3 to 11 yrs old: Php "+ades5[17],"60 yrs & up: Php "+ades5[18],"Student: Php "+ades5[19]]},
+	
+	
+	
+	"Ozamiz to Cebu":{ "2nd Class": ["Adult: Php "+ades6[0], "0 to 2 yrs old: Php "+ades6[1],"3 to 11 yrs old: Php "+ades6[2],"60 yrs & up: Php "+ades6[3],"Student: Php "+ades6[4]],
+        "Tourist": ["Adult: Php "+ades6[5], "0 to 2 yrs old: Php "+ades6[6],"3 to 11 yrs old: Php "+ades6[7],"60 yrs & up: Php "+ades6[8],"Student: Php "+ades6[9]],
+		"Cabin": ["Adult: Php "+ades6[10], "0 to 2 yrs old: Php "+ades6[11],"3 to 11 yrs old: Php "+ades6[12],"60 yrs & up: Php "+ades6[13],"Student: Php "+ades6[14]],
+		"Presidential Suite": ["Adult: Php "+ades6[15], "0 to 2 yrs old: Php "+ades6[16],"3 to 11 yrs old: Php "+ades6[17],"60 yrs & up: Php "+ades6[18],"Student: Php "+ades6[19]]},
+	
+	
+	
+	"Cebu to Masbate":{ "2nd Class": ["Adult: Php "+ades7[0], "0 to 2 yrs old: Php "+ades7[1],"3 to 11 yrs old: Php "+ades7[2],"60 yrs & up: Php "+ades7[3],"Student: Php "+ades7[4]],
+        "Tourist": ["Adult: Php "+ades7[5], "0 to 2 yrs old: Php "+ades7[6],"3 to 11 yrs old: Php "+ades7[7],"60 yrs & up: Php "+ades7[8],"Student: Php "+ades7[9]],
+		"Cabin": ["Adult: Php "+ades7[10], "0 to 2 yrs old: Php "+ades7[11],"3 to 11 yrs old: Php "+ades7[12],"60 yrs & up: Php "+ades7[13],"Student: Php "+ades7[14]],
+		"Presidential Suite": ["Adult: Php "+ades7[15], "0 to 2 yrs old: Php "+ades7[16],"3 to 11 yrs old: Php "+ades7[17],"60 yrs & up: Php "+ades7[18],"Student: Php "+ades7[19]]},
+	
+	
+	
+	"Masbate to Cebu":{ "2nd Class": ["Adult: Php "+ades8[0], "0 to 2 yrs old: Php "+ades8[1],"3 to 11 yrs old: Php "+ades8[2],"60 yrs & up: Php "+ades8[3],"Student: Php "+ades8[4]],
+        "Tourist": ["Adult: Php "+ades8[5], "0 to 2 yrs old: Php "+ades8[6],"3 to 11 yrs old: Php "+ades8[7],"60 yrs & up: Php "+ades8[8],"Student: Php "+ades8[9]],
+		"Cabin": ["Adult: Php "+ades8[10], "0 to 2 yrs old: Php "+ades8[11],"3 to 11 yrs old: Php "+ades8[12],"60 yrs & up: Php "+ades8[13],"Student: Php "+ades8[14]],
+		"Presidential Suite": ["Adult: Php "+ades8[15], "0 to 2 yrs old: Php "+ades8[16],"3 to 11 yrs old: Php "+ades8[17],"60 yrs & up: Php "+ades8[18],"Student: Php "+ades8[19]]},
+	
+	
+	
+	"Cagayan to Tagbilaran":{ "2nd Class": ["Adult: Php "+ades9[0], "0 to 2 yrs old: Php "+ades9[1],"3 to 11 yrs old: Php "+ades9[2],"60 yrs & up: Php "+ades9[3],"Student: Php "+ades9[4]],
+        "Tourist": ["Adult: Php "+ades9[5], "0 to 2 yrs old: Php "+ades9[6],"3 to 11 yrs old: Php "+ades9[7],"60 yrs & up: Php "+ades9[8],"Student: Php "+ades9[9]],
+		"Cabin": ["Adult: Php "+ades9[10], "0 to 2 yrs old: Php "+ades9[11],"3 to 11 yrs old: Php "+ades9[12],"60 yrs & up: Php "+ades9[13],"Student: Php "+ades9[14]],
+		"Presidential Suite": ["Adult: Php "+ades9[15], "0 to 2 yrs old: Php "+ades9[16],"3 to 11 yrs old: Php "+ades9[17],"60 yrs & up: Php "+ades9[18],"Student: Php "+ades9[19]]},
+	
+	
+	
+	"Tagbilaran to Cagayan":{ "2nd Class": ["Adult: Php "+ades10[0], "0 to 2 yrs old: Php "+ades10[1],"3 to 11 yrs old: Php "+ades10[2],"60 yrs & up: Php "+ades10[3],"Student: Php "+ades10[4]],
+        "Tourist": ["Adult: Php "+ades10[5], "0 to 2 yrs old: Php "+ades10[6],"3 to 11 yrs old: Php "+ades10[7],"60 yrs & up: Php "+ades10[8],"Student: Php "+ades10[9]],
+		"Cabin": ["Adult: Php "+ades10[10], "0 to 2 yrs old: Php "+ades10[11],"3 to 11 yrs old: Php "+ades10[12],"60 yrs & up: Php "+ades10[13],"Student: Php "+ades10[14]],
+		"Presidential Suite": ["Adult: Php "+ades10[15], "0 to 2 yrs old: Php "+ades10[16],"3 to 11 yrs old: Php "+ades10[17],"60 yrs & up: Php "+ades10[18],"Student: Php "+ades10[19]]},
+	
+	
+	
+	
+	
+	
+}
+window.onload = function () {
+	
+	
+    var stateSel = document.getElementById("stateSel"),
+        countySel = document.getElementById("countySel"),
+        citySel = document.getElementById("citySel");
+    for (var state in stateObject) {
+        stateSel.options[stateSel.options.length] = new Option(state, state);
+    }
+	
+	
+    stateSel.onchange = function () {
+		//countySel.selectedIndex = 0; citySel.selectedIndex = 0;
+	
+		var myselect = $("select#countySel");
+   			myselect[0].selectedIndex = 0;
+   			myselect.selectmenu("refresh");
+			
+		var myselect2 = $("select#citySel");
+   			myselect2[0].selectedIndex = 0;
+   			myselect2.selectmenu("refresh");
+		
+
+        countySel.length = 1; // remove all options bar first
+        citySel.length = 1; // remove all options bar first
+        if (this.selectedIndex < 1) return; // done   
+        for (var county in stateObject[this.value]) {
+            countySel.options[countySel.options.length] = new Option(county, county);	
+        }//alert(stateObject[this.value]); 
+		
+		//////////////////////
+		//$('#dest2').empty();$('#dest1').empty();
+		var transdes = document.getElementById("stateSel").value;
+		var imgarraydes = transdes.split(' to ');
+		
+		
+	
+   var img1 = '<img src="images/destA/'+imgarraydes[0]+'.jpg" />';
+   $('#dest1').html(img1);
+   var img2 = '<img src="images/destB/'+imgarraydes[1]+'.jpg" />';
+    $('#dest2').html(img2);
+		////////////////////////////
+		
+		
+    }
+    stateSel.onchange(); // reset in case page is reloaded
+    countySel.onchange = function () {
+		//citySel.selectedIndex = 0;
+		
+		var myselect2 = $("select#citySel");
+   			myselect2[0].selectedIndex = 0;
+   			myselect2.selectmenu("refresh");
+		
+		
+        citySel.length = 1; // remove all options bar first
+        if (this.selectedIndex < 1) return; // done   
+        var cities = stateObject[stateSel.value][this.value];
+        for (var i = 0; i < cities.length; i++) {
+            citySel.options[citySel.options.length] = new Option(cities[i], cities[i]);
+        }
+    }
+}
+
+
+
+
+</script>
+
+
+<center>
+
+<div  style="width:50%; text-align:right; float:left" id="dest1">
+</div>
+<div style="width:50%; text-align:left; float:left"  id="dest2">
+</div>
+<br style="clear:both">
+<form name="myform" id="myForm" >
+    <select name="optone" id="stateSel" size="1" class="form-control target" style="height:50px" >
+        <option value="" >Select Destination</option>
+    </select>
+    <br>
+    <select name="opttwo" id="countySel" size="1"  class="form-control" style="height:50px">
+        <option value="">Select Accommodation Type</option>
+    </select>
+    <br>
+    <select name="optthree" id="citySel" size="1"  class="form-control" style="height:50px; font-family: Arial Unicode MS, Lucida Sans Unicode, Code2000, sans-serif;">
+        <option value="" >Select Age Group</option>
+    </select>
+    <br>
+     <input type="number" class="form-control" id="countperson" placeholder="Number of Persons" name="qty"/>
+    <br>
+    <input type="button" value="Add to Current Total Passage Fare" onClick="addcomp()" class="btn btn-primary" style="background-color:#003; color:#FFF" />
+</form>
+ <br>
+    <br>
+
+<script>
+function addcomp(){
+	
+	var transdes = document.getElementById("stateSel").value;
+	var transtyp = document.getElementById("countySel").value;
+	var transage = document.getElementById("citySel").value;
+	var transperson = document.getElementById("countperson").value;
+
+//review counter, plus loop
+var ratesarraycounter = localStorage['ratesarraycounter']; 	 ratesarraycounter++; 
+
+
+
+
+if(localStorage['ratesarraycounter']==undefined||localStorage['ratesarraycounter']==''){ratesarraycounter=0; var rates = [];}else{
+//retrive array rates
+var rates = JSON.parse(localStorage["rates"]);	
+	}
+
+
+
+
+
+ localStorage['ratesarraycounter'] = ratesarraycounter;
+
+
+
+//add new on array, use loop
+rates[ratesarraycounter] = transdes+'-'+transtyp+'-'+transage+'-'+transperson;
+//save on storage
+localStorage['rates'] = JSON.stringify(rates);
+
+//location.href = "rates.html";
+//var storedNames = JSON.parse(localStorage["names"]);
+	window.location = "rates.html";alert('Would you like to purchase another type of accommodation on the same trip?');
+}
+
+$( ".target" ).change(function() {
+  //var str = $(this).val();
+  //alert( str );
+  //var str = $(this).selectedIndex();
+
+  });
+
+function schedules(){ 
+ var str = 1;//document.getElementByName("optone").selectedIndex;
+ localStorage['destination'] = str;
+ location.href = "schedules.html";
+ }
+ 
+ 
+ 
+function delthis(delindex){
+	// alert(delindex);
+	 var rates = JSON.parse(localStorage["rates"]); 
+	 rates.sort();
+	 rates[delindex]='';
+	// alert(rates);
+	 localStorage['rates'] = JSON.stringify(rates);
+	 //var ratesarraycounter = localStorage['ratesarraycounter']; 	 ratesarraycounter--;
+	 //localStorage['ratesarraycounter'] = ratesarraycounter;  
+	 }
+
+
+
+function addsched(schedindex){
+	alert(schedindex); 
+	location.href = "schedules.html";
+}
+
+</script>
+
+
+<h2 style="font-size:22px">Total Passage Fare</h2>
+
+<div id="rateresult"></div>
+
+
+<!--<input type="submit" class="btn btn-primary" onClick="schedules()" value="VIEW THE SCHEDULE OF YOUR DESTINATION" />
+-->
+
+</center>
+
+<script>
+
+
+ //review counter, plus loop
+var ratesarraycounter = localStorage['ratesarraycounter']; 
+//retrive array rates
+var rates = JSON.parse(localStorage["rates"]); 
+rates.sort();
+
+
+var ii ; var ratesarraytemp; var toptitle=''; var dessummary; var tabecosecounter=0; var tabeopencounter=0; var totalclose=''; var typeprice;
+var totalamount=0;
+var colorit = 'ccc';
+
+for(ii=0;ii<=ratesarraycounter;ii++){
+	
+	if(rates[ii]!=""){
+	
+	
+	var ratesarrayz = rates[ii].split("-");
+	
+	var typeprice = ratesarrayz[2].split(":"); 
+	typeprice[1] = typeprice[1].replace("Php", "&#8369;");
+	var amountprice = typeprice[1].split(" ");
+	
+	//thesubprice = thesubprice.replace(",", "");
+	
+	
+	if(ratesarrayz[0]!=ratesarraytemp){
+		///////////////
+		
+	//////////////////////////////////HEADER//////////////////////////////
+		if(tabecosecounter>0){totalclose = '<tr style="background:#3f7aff; color:WHITE"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td colspan="3" style="text-align:left"><b>TOTAL</b> <b>&#8369; '+totalamount+'</b></td><td>&nbsp;</td></tr></table>'; totalamount=0;}
+		//////////////////
+		toptitle='<br />&nbsp;<br /><table width="100%" border="0" cellspacing="0" cellpadding="0" style="background:#ccc" ><tr><td colspan="5" align="center" style="background:RED; color:WHITE"><b style="font-size:20px">'+ratesarrayz[0]+'</b></td><td align="center" style="background:RED; color:WHITE"><a style="color:WHITE" href="" onclick="addsched('+ii+')" >CREATE SCHEDULE</a></td> <tr style="color:#FFF;">  <td width="15%" align="center" bgcolor="#0548de">Type</td>   <td width="19%" align="center" bgcolor="#0548de">Age<!-- Group--></td>   <td width="22%" align="center" bgcolor="#0548de">Price</td>    <td width="10%" align="center" bgcolor="#0548de">No.<!-- of Person--></td>    <td width="16%" align="center" bgcolor="#0548de">Sub<!---Total--></td>    <td width="18%" align="center" bgcolor="#0548de">Options</td></tr>';
+		tabecosecounter++;
+		ratesarraytemp=ratesarrayz[0]; 
+		}else{toptitle='';totalclose=''; }
+		//////////////////////////////////FOOTER//////////////////////////////
+		typeprice[1] = typeprice[1].replace("Php", "&#8369;");
+		
+	var subprice = typeprice[1].split(" ");
+	var thesubprice = subprice[2];
+	if(thesubprice=='N.A.'){thesubprice=0;}
+	
+	
+	var thesubperson = ratesarrayz[3];
+	if(thesubperson==undefined||thesubperson==''){thesubperson=0;}
+	
+	
+	thesubprice = thesubprice.replace(",", "");
+	thesubprice = thesubprice.replace(".", "");
+	thesubprice = parseInt(thesubprice);
+	subtotalamount = thesubprice*thesubperson; totalamount+=subtotalamount;
+	
+	if(colorit=="eee"){colorit='ddd';}else{colorit='eee';}
+	dessummary += totalclose+toptitle+'<tr style="font-size:12px; text-align:center; background:#'+colorit+'"><td>'+ratesarrayz[1]+'</td><td>'+typeprice[0]+'</td><td>'+typeprice[1]+'</td><td>'+ratesarrayz[3]+'</td><td>&#8369; '+subtotalamount+'</td><td><a href="" onclick="delthis('+ii+')" >DELETE</a></td></tr>'; 
+	
+	
+	
+
+	if(ii==ratesarraycounter){dessummary += '<tr style="background:#3f7aff; color:WHITE"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td colspan="3" style="text-align:left"><b>TOTAL </b> <b style="font-size:15px">&#8369; '+totalamount+'</b></td><td>&nbsp;</td></tr></table>';}
+
+	}}
+document.getElementById('rateresult').innerHTML = dessummary+'<br />';
+</script>
+
+
+</body>
+
+
+  

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.baicebu.transasiashipping"
+        versionCode="12" 
+        version   = "1.2.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Shipping Lines, Inc</name>
+
+    <description>
+        Trans-Asia is an app to get transasiashipping updates... to build apps in fast and easy way, visit baicebu.com
+    </description>
+
+    <author href="https://www.oliverconcepts.com" email="info@oliverconcepts.com">
+       Engr. Oliver Gonzales
+    </author>
+
+	<icon src="icon.png" />
+	<gap:splash src="splash.png" />
+	
+	
+	
+	<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+	</feature>
+
+<feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser" />
+</feature>
+
+
+<preference name="Orientation" value="portrait" />
+
+
+<gap:plugin name="com.moust.cordova.videoplayer" version="1.0.0" />
+
+</widget>
