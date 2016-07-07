@@ -1,0 +1,14 @@
+<script src="jquery-1.9.1.min.js"></script>
+<script>
+
+$.ajax({
+    type:     "GET",
+    url:      "http://www.baicebu.com/trans2/apps/updateimg.php", // <-- Here
+    dataType: "text",
+    success: function(data){
+        alert(data);
+    }
+});
+
+
+</script>
