@@ -10,7 +10,7 @@ if(online==true){
 intro = '<img src="images/logo.png" style="padding-left:10%; width:80%" /><br /><video autoplay width="100%" poster="http://www.iscriptzconcepts.com/trans.jpg" controls=""><source src="http://www.iscriptzconcepts.com/trans.ogv" type="video/ogv"><source src="http://www.iscriptzconcepts.com/trans.mp4" type="video/mp4"><p>Your browser does not support H.264/MP4.</p></video>';
 //tab1 = '<iframe src="http://baicebu.com/trans2/apps-update/" style="width:100%; height:700px;border:0px;">';
 
-localStorage['updateimg3']='getnew';
+updateimg3='getnew';
 
 tab1 = '<iframe src="update.html" style="width:100%; height:700px;border:0px;">';
 //'<iframe src="http://baicebu.com/trans2/apps/update.php" style="width:100%; height:700px;border:0px;">';
@@ -19,11 +19,15 @@ tab3 = '<iframe src="http://www.buildwebdesign.com/transmap/apps/" style="width:
 //games = '<iframe src="games/index.html" style="width:100%; height:1500px;border:0px">';
 info = '<iframe src="info.html" style="width:100%; height:1500px;border:0px">';
 var randomimg = Math.floor((Math.random() * 100) + 1);
-newshere = '<img src="images/news_01.jpg" width="100%"/><br />&nbsp;<br /><img src="http://baicebu.com/trans2/apps/update.jpg'+randomimg+'" width="100%"/>';
+newshere = '<center><img src="images/mycodes.jpg" width="100%"><p>DISCOUNTS: SAMPLECODE123</p><img src="images/starsy.jpg" width="100%"></center>';
 }
 
 
 if(online==false){
+	
+updateimg3='useold';
+	
+	
 intro = '<img src="images/logo.png" style="padding-left:10%; width:80%" /><br /><img src="images/player.jpg" width="100%"/>';
 //tab1 = '<iframe src="http://baicebu.com/trans2/apps-update/" style="width:100%; height:700px;border:0px;">';
 tab1 = '<iframe src="update.html" style="width:100%; height:700px;border:0px;">';
@@ -31,11 +35,11 @@ tab2 = '<iframe src="offlineschedules.html" style="width:100%; height:700px;bord
 tab3 = '<iframe src="map/index.html" style="width:100%; height:700px;border:0px; overflow:hidden;">';
 //games = '<iframe src="games/index.html" style="width:100%; height:1500px;border:0px">';
 info = '<iframe src="info.html" style="width:100%; height:1500px;border:0px">';
-newshere = '<img src="images/news_01.jpg" width="100%"/><br />&nbsp;<br /><img src="images/tosend2.jpg" width="100%"/>';
+newshere = '<center><img src="images/mycodes.jpg" width="100%"><p>DISCOUNTS: SAMPLECODE123</p><img src="images/starsy.jpg" width="100%"></center>';
 }
 
 
-localStorage['settings'] = 'user,pass,'+tab1+','+tab2+','+tab3+',Trans-Asia Shipping Lines$^$ Inc.,'+newshere+',noticount,water,dateupdate,datereg,ipaddress1,ipaddress2,logincount,stat,ads,'+info+','+intro;
+localStorage['settings'] = 'user,pass,'+tab1+','+tab2+','+tab3+',Trans-Asia Shipping Lines$^$ Inc.,'+newshere+',noticount,water,dateupdate,datereg,ipaddress1,ipaddress2,logincount,stat,ads,'+info+','+intro+','+updateimg3;
 
 
 	window.parent.location.href = "page.html";

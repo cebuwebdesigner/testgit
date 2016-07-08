@@ -9,27 +9,42 @@
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <meta charset="ISO-8859-1">
 
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="jquery.mobile-1.3.1.min.js"></script>
 <script>  
 var AAA = localStorage['settings'].split(',');
 document.write('<link rel="stylesheet" href="themes/'+AAA[8]+'/jquery.mobile-1.3.1.css" />');
 
-if(localStorage['updateimg3']=='getnew'){
+
+
+      // localStorage['updateimg3'] = data;
+	 //  alert(data);
+	   
 $.ajax({
-    type:     "GET",
-    url:      "http://www.baicebu.com/trans2/apps/updateimg.php", // <-- Here
-    dataType: "text",
-    success: function(data){
-       localStorage['updateimg3'] = data;
+  url:      "http://www.baicebu.com/trans2/apps/updateimg.php", // <-- Here
+   dataType: 'jsonp',
+   crossDomain:true,
+    jsonpCallback: 'jsonpCallback',
+    jsonp: false,
+    success: jsonpCallback,
+})
+.done(function( msg ) {
+  //alert( "Done : " + msg['message'] );
+  localStorage['updateimg3'] = msg['message'];
+})
+
+
+ function jsonpCallback(data){
+        //alert("jsonpCallback");
     }
-});
-}
+
+
+// alert(AAA[18]);
 
 
 </script>
 
 
-  <script src="jquery-1.9.1.min.js"></script>
-  <script src="jquery.mobile-1.3.1.min.js"></script>
   
   <style>
   .panel {
@@ -73,6 +88,8 @@ $.ajax({
 
 html, body {margin:0;padding:0;height:100%;}
 
+
+
 </style>
 
 </head> 
@@ -80,12 +97,12 @@ html, body {margin:0;padding:0;height:100%;}
 
  
 <div data-role="page">
-<div class="panel" id="thesidebar">
+<div class="panel" id="thesidebar" style="background-color:#275eb8; color:#FFF; font-size:24px">
 </div>
  
  
   <div data-role="header" data-position="fixed">
-    <a href="javascript:void(0);" class="slider-arrow show" data-role="none">NEWS</a>
+    <a href="javascript:void(0);" class="slider-arrow show" data-role="none">MY CODE</a>
     <h1 id="thetitle"></h1>
      <a href="settings.html" data-ajax="false" class="slider-arrow2" data-role="none">SHARE</a>
   </div><!-- /header -->
@@ -115,8 +132,8 @@ VideoPlayer.play(
 
 
 
-
-  </div><!-- /content -->
+  </div>
+<center><h2 style="font-size:36px">Download your travel guide.  Know where we sail, <br/>our rates and current promo fares and practical travel tips.</h2></center><!-- /content -->
  <a href="#top"> </a>
   <div data-role="footer" data-position="fixed">
   
@@ -151,7 +168,7 @@ $(function(){
 		  }, 700, function() {
             // Animation complete.
           });
-		  $(this).html('NEWS').removeClass('show').addClass('hide');
+		  $(this).html('MY CODE').removeClass('show').addClass('hide');
         }
         else {   	
 	    $( ".slider-arrow, .panel" ).animate({
