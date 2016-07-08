@@ -2,8 +2,8 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.baicebu.transasiashipping"
-        versionCode="11" 
-        version   = "1.1.0">
+        versionCode="12" 
+        version   = "1.2.0">
 
     <!-- versionCode is optional and Android only -->
 
@@ -35,5 +35,11 @@
 
 
 <gap:plugin name="com.moust.cordova.videoplayer" version="1.0.0" />
+
+
+<plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />
+<allow-navigation href="*" />
+<allow-intent href="*" />
+<access origin="*" /> <!-- Required for iOS9 -->
 
 </widget>
