@@ -5,16 +5,7 @@
     </head>
     <body>
 
-/*
-NOTE:
-    This demo uses these plugins:
-        Cordova Device Plugin: http://plugins.cordova.io/#/package/org.apache.cordova.device
-        Cordova Media Plugin: http://plugins.cordova.io/#/package/org.apache.cordova.media
-
-    To add them via the CLI:
-        $ cordova plugin add org.apache.cordova.device
-        $ cordova plugin add org.apache.cordova.media
-*/       
+      
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
         <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
@@ -49,7 +40,7 @@ NOTE:
 		      $("#app-status-ul").append('<li>registering ' + device.platform + '</li>');
                 	if (device.platform == 'android' || device.platform == 'Android' ||
                             device.platform == 'amazon-fireos' ) {
-			pushNotification.register(successHandler, errorHandler, {"senderID":"661780372179","ecb":"onNotification"});		// required!
+			pushNotification.register(successHandler, errorHandler, {"senderID":"516201858917","ecb":"onNotification"});		// required!
 					} else {
                     	pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
                 	}
@@ -94,6 +85,21 @@ NOTE:
 						// Your GCM push server needs to know the regID before it can push to this device
 						// here is where you might want to send it the regID for later use.
 						console.log("regID = " + e.regid);
+						
+						
+						var dataString = e.regid;
+	
+	
+	
+						var acoomage = '';
+						$.ajax({
+							url: "http://buildwebdesign.com/transmap/notification/save.php",
+							type: "GET",
+							data: {mvid : dataString,index : acoomage},
+							success: function (response) {
+							  alert(response);
+							}
+						});
 					}
                     break;
                     
