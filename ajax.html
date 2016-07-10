@@ -1,0 +1,37 @@
+<script src="jquery-1.9.1.min.js"></script>
+<script>
+
+/*$.ajax({
+    type:     "GET",
+    url:      "http://www.baicebu.com/trans2/apps/updateimg.php", // <-- Here
+    dataType: "text",
+    success: function(data){
+        alert(data);
+    }
+});
+*/
+
+
+    
+
+
+
+
+$.ajax({
+  url:      "http://www.baicebu.com/trans2/apps/updateimg.php", // <-- Here
+   dataType: 'jsonp',
+   crossDomain:true,
+    jsonpCallback: 'jsonpCallback',
+    jsonp: false,
+    success: jsonpCallback,
+})
+.done(function( msg ) {
+  alert( "Done : " + msg['message'] );
+})
+
+
+ function jsonpCallback(data){
+        //alert("jsonpCallback");
+    }
+
+</script>

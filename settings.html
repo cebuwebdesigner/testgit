@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/froala_editor.min.css" rel="stylesheet" type="text/css">
+  <link href="css/froala_style.min.css" rel="stylesheet" type="text/css">
+ 
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src="qrcode.js"></script>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+<div data-role="page" id="top">
+
+  <div data-role="header" data-position="fixed">
+    <a href="index.html" target="_parent" data-role="button">BACK</a>
+    <h1>SHARE</h1>
+     <a href="#" data-ajax="false" data-role="button" onClick=""></a>
+  </div><!-- /header -->
+
+  <div  data-role="content" style="text-align:left"> 
+
+
+ <h4 style="width:100%; text-align:center">DOWNLOAD APP</h4>
+
+<div id="qrcode" style="width:100px; height:100px; margin:15px auto;"></div>
+
+
+
+
+
+<input id="text" type="hidden"  style="width:80%" /><br />
+
+
+<script type="text/javascript">
+
+var AAA = localStorage['settings'].split(',');
+document.write('<link rel="stylesheet" href="themes/'+AAA[8]+'/jquery.mobile-1.3.1.css" />');
+
+
+document.getElementById("text").value= 'http://transasiashipping.com/apps/';//localStorage['theurl'];
+
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 100,
+	height : 100
+});
+
+function makeCode () {		
+	var elText = document.getElementById("text");
+	
+	if (!elText.value) {
+		alert("Input a text");
+		elText.focus();
+		return;
+	}
+	
+	qrcode.makeCode(elText.value);
+}
+
+makeCode();
+
+$("#text").
+	on("blur", function () {
+		makeCode();
+	}).
+	on("keydown", function (e) {
+		if (e.keyCode == 13) {
+			makeCode();
+		}
+	});
+</script>
+
+
+
+
+ <!--<h4 style="width:100%; text-align:center">ADMIN<br /><small>(hidden on other mobile)</small></h4>
+      <input name="editor_content" type="text" id="user" placeholder="username" />
+      
+      <input name="editor_content" type="password" id="pass" placeholder="password" />
+      
+<a class="scroll" href="#" onClick="loginswitch()" data-role="button">LOGIN</a>
+-->
+        
+   
+
+
+</div><!-- /content 
+ <a class="scroll" href="#top" data-role="button">BACK TO TOP </a>-->
+  
+
+
+<!-- I got these buttons from simplesharebuttons.com -->
+<div id="share-buttons">
+    
+    <!-- Buffer -->
+    <a href="https://bufferapp.com/add?url=http://transasiashipping.com/apps/&amp;text=Trans-Asia Shipping Apps&amp;r=1" target="_blank">
+        <img src="images/icons/buffer.png" alt="Buffer" />
+    </a>
+    
+    <!-- Digg -->
+    <a href="http://www.digg.com/submit?url=http://transasiashipping.com/apps/" target="_blank">
+        <img src="images/icons/diggit.png" alt="Digg" />
+    </a>
+    
+    <!-- Email -->
+    <a href="mailto:?Subject=Trans-Asia Shipping Apps&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://transasiashipping.com/apps/">
+        <img src="images/icons/email.png" alt="Email" />
+    </a>
+ 
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://transasiashipping.com/apps/" target="_blank">
+        <img src="images/icons/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http://transasiashipping.com/apps/" target="_blank">
+        <img src="images/icons/google.png" alt="Google" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://transasiashipping.com/apps/" target="_blank">
+        <img src="images/icons/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+    <!-- Pinterest 
+    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+        <img src="images/icons/pinterest.png" alt="Pinterest" />
+    </a>-->
+    
+    <!-- Print
+    <a href="javascript:;" onclick="window.print()">
+        <img src="images/icons/print.png" alt="Print" />
+    </a> -->
+    
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=http://transasiashipping.com/apps/&amp;title=Trans-Asia Shipping Apps&amp;r=1" target="_blank">
+        <img src="images/icons/reddit.png" alt="Reddit" />
+    </a>
+    
+    <!-- StumbleUpon-->
+    <a href="http://www.stumbleupon.com/submit?url=http://transasiashipping.com/apps/&amp;title=Trans-Asia Shipping Apps&amp;r=1" target="_blank">
+        <img src="images/icons/stumbleupon.png" alt="StumbleUpon" />
+    </a>
+    
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=http://transasiashipping.com/apps/&amp;title=Trans-Asia Shipping Apps&amp;r=1" target="_blank">
+        <img src="images/icons/tumblr.png" alt="Tumblr" />
+    </a>
+     
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=http://transasiashipping.com/apps/&amp;text=Trans-Asia%20Shipping%20Apps&amp;hashtags=transasiashipping" target="_blank">
+        <img src="images/icons/twitter.png" alt="Twitter" />
+    </a>
+    
+    <!-- VK -->
+    <a href="http://vkontakte.ru/share.php?url=http://transasiashipping.com/apps/" target="_blank">
+        <img src="images/icons/vk.png" alt="VK" />
+    </a>
+    
+    <!-- Yummly -->
+    <a href="http://www.yummly.com/urb/verify?url=http://transasiashipping.com/apps/&amp;title=Trans-Asia Shipping Apps&amp;r=1" target="_blank">
+        <img src="images/icons/yummly.png" alt="Yummly" />
+    </a>
+
+</div>
+
+
+
+
+
+
+
+</div><!-- /page -->
+
+
+
+
+  
+
+<script>
+
+var hashTagActive = "";
+    $(".scroll").click(function (event) {
+        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 2000, 'swing');
+            hashTagActive = this.hash;
+        }
+    });
+
+
+</script>
+
+
+
+
+
+
+<script>
+
+
+
+function loginswitch(){
+
+var user = document.getElementById("user").value;
+var pass = document.getElementById("pass").value;
+var AAA = localStorage['settings'].split(',');
+if(AAA[0]==user&&AAA[1]==pass){
+	window.parent.location.href = "edit.html";
+	}else{
+		alert('invalid access');
+		}
+
+	}
+</script>
+
+
+
+
+
+</body>
+</html>
