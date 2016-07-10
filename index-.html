@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>com.PhoneGap.c2dm</title>
+    </head>
+    <body>
+
+      
+        <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
+        <script type="text/javascript" src="push.js"></script>
+        
+        <script type="text/javascript">
+           
+            
+            function onDeviceReady() {
+             var push = PushNotification.init({
+    android: {
+        senderID: "516201858917"
+    },
+    ios: {
+        alert: "true",
+        badge: "true",
+        sound: "true"
+    },
+    windows: {}
+});
+
+push.on('registration', function(data) {
+  
+  var dataString = data.registrationId; alert(dataString);
+  var acoomage = '';
+	$.ajax({
+        url: "http://buildwebdesign.com/transmap/notification/save.php",
+        type: "GET",
+        data: {mvid : dataString,index : acoomage},
+		success: function (response) {
+          alert(response);
+        }
+    });
+  
+  
+  
+});
+
+push.on('notification', function(data) {
+    // data.message,
+    // data.title,
+    // data.count,
+    // data.sound,
+    // data.image,
+    // data.additionalData
+});
+
+push.on('error', function(e) {
+    // e.message
+});
+            }
+            
+           
+            
+			document.addEventListener('deviceready', onDeviceReady, true);
+
+         </script>
+		<div id="home">
+			<div id="app-status-div">
+				<ul id="app-status-ul">
+					<li>Cordova PushNotification Plugin Demo</li>
+				</ul>
+			</div>
+		</div>
+    </body>
+</html>
